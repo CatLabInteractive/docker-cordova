@@ -1,4 +1,4 @@
-FROM beevelop/cordova:latest
+FROM beevelop/cordova:7.0.1
 
 ADD cordova /tmp/cordova
 
