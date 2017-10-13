@@ -11,6 +11,6 @@ RUN for I in \
              extra-android-support \
              extra-google-google_play_services \
              extra-google-m2repository; \
-     do echo y | android update sdk --no-ui --all --filter $I;android-25 ; done
+     do echo y | android update sdk --no-ui --all --filter $I; done
 
 WORKDIR "/data"
