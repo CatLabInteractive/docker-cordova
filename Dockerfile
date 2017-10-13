@@ -1,4 +1,4 @@
-FROM beevelop/cordova:v6.5.0
+FROM beevelop/cordova:v7.0.1
 
 ADD cordova /tmp/cordova
 
@@ -11,6 +11,6 @@ RUN for I in \
              extra-android-support \
              extra-google-google_play_services \
              extra-google-m2repository; \
-     do echo y | android update sdk --no-ui --all --filter $I ; done
+     do echo y | android update sdk --no-ui --all --filter $I;android-25 ; done
 
 WORKDIR "/data"

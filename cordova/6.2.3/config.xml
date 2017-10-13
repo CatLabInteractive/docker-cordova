@@ -12,5 +12,5 @@
     <platform name="android">
         <allow-intent href="market:*" />
     </platform>
-    <engine name="android" spec="^6.2.3" />
+    <engine name="android" />
 </widget>
