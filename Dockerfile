@@ -2,7 +2,7 @@ FROM beevelop/cordova:v7.0.1
 
 ADD cordova /tmp/cordova
 
-RUN cd /tmp/cordova/6.2.3 && cordova platform add android && cordova build android
+RUN cd /tmp/cordova/7.0.1 && cordova platform add android && cordova build android
 RUN apt-get update && apt-get install git -y
 
 RUN for I in \
