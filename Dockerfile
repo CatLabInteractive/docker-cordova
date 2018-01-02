@@ -2,6 +2,8 @@ FROM beevelop/cordova:v8.0.0-gapis
 
 ADD cordova /tmp/cordova
 
+RUN yes | sdkmanager --licenses
+
 RUN cd /tmp/cordova/6.2.3 && cordova platform add android && cordova build android
 
 RUN apt-get update && apt-get install git -y
