@@ -1,4 +1,4 @@
-FROM beevelop/cordova:v8.0.0-gapis
+FROM beevelop/cordova:v9.0.0-gapis
 
 ADD cordova /tmp/cordova
 
