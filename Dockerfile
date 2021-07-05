@@ -1,10 +1,8 @@
-FROM beevelop/cordova:v9.0.0-gapis
+FROM beevelop/cordova:v2021.04.1
 
 ADD cordova /tmp/cordova
 
 RUN yes | sdkmanager --licenses
-
-RUN cd /tmp/cordova/6.2.3 && cordova platform add android && cordova build android
 
 RUN apt-get update && apt-get install git -y
 
